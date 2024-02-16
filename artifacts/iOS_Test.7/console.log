@@ -1,0 +1,55 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ Running tests in:
+ - Safari 14.0.1 / iOS 14.3
+
+First command finished in:  1708077020233
+Driver setup time is:  40.12
+ ✓ A set of examples that illustrate how to use TestCafe API - Small test
+ ✓ A set of examples that illustrate how to use TestCafe API - Text typing basics
+ ✓ A set of examples that illustrate how to use TestCafe API - Click an array of labels and then check their states
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using keyboard
+ ✓ A set of examples that illustrate how to use TestCafe API - Moving the slider
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using selection
+ ✓ A set of examples that illustrate how to use TestCafe API - Handle native confirmation dialog
+ ✓ A set of examples that illustrate how to use TestCafe API - Pick option from select
+ ✖ A set of examples that illustrate how to use TestCafe API - Filling a form
+
+   1) Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+
+       > | Selector('.result-content')
+
+      Browser: Safari 14.0.1 / iOS 14.3
+
+         194 |
+         195 |    // Let's submit our form
+         196 |    await t
+         197 |        .wait(500)
+         198 |        .click(submitButton)
+       > 199 |        .expect(results.innerText).contains('Bruce Wayne');
+         200 |});
+         201 |
+         202 |
+         203 |fixture `2nd webpage`
+         204 |    .page `https://the-internet.herokuapp.com/login`;
+
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:199:36)
+         at asyncGeneratorStep (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at _next (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+
+
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page for 2nd time
+ ✓ 3rd webpage - Open Internet Heroku APP Check boxes
+Test Execution time:   73.9
+{
+  setuptime: 40.12,
+  executionTime: 73.9,
+  buildName: 'Testcafe_Sample_build_SL'
+}
+ ✓ 3rd webpage - Open Internet Heroku APP Check boxes 2nd time
+
+
+ 1/13 failed (1m 19s)

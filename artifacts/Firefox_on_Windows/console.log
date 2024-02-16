@@ -1,0 +1,12 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ Running tests in:
+ - Firefox 122.0 / Windows 11
+
+ √ Change Element Style - Hide an element
+ √ Change Element Style - Change header color
+
+
+ 2 passed (2s)

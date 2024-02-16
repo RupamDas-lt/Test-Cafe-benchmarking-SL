@@ -14,29 +14,29 @@ testcafe:
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 suites:
-  - name: "Chrome on macOS"
-    browserName: "chrome"
-    src:
-      - "tests/*.test.js" # test files glob
-    platformName: "macOS 12"
-  - name: "Firefox on Windows"
-    browserName: "firefox"
-    src:
-      - "tests/*.test.js"
-    platformName: "Windows 11"
+  # - name: "Chrome on macOS"
+  #   browserName: "chrome"
+  #   src:
+  #     - "tests/*.test.js" # test files glob
+  #   platformName: "macOS 12"
+  # - name: "Firefox on Windows"
+  #   browserName: "firefox"
+  #   src:
+  #     - "tests/*.test.js"
+  #   platformName: "Windows 11"
   - name: iOS Test
     browserName: "safari"
     src:
       - "tests/*.test.js" # test files glob
     simulators:
-      - name: iPhone 12 Simulator
+      # - name: iPhone 12 Simulator
+      #   platformName: iOS
+      #   platformVersions:
+      #     - "14.3"
+      - name: iPhone 13 Simulator
         platformName: iOS
         platformVersions:
-          - "14.3"
-      - name: iPad mini (5th generation) Simulator
-        platformName: iOS
-        platformVersions:
-          - "14.3"
+          - "15.0"
 
 # Controls what artifacts to fetch when the suites have finished.
 artifacts:

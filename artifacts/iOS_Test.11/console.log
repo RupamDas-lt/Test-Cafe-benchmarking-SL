@@ -1,0 +1,33 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ Running tests in:
+ - Safari 14.0.1 / iOS 14.3
+
+First command finished in:  1708078324220
+Driver setup time is:  40.583
+ ✓ A set of examples that illustrate how to use TestCafe API - Small test
+ ✓ A set of examples that illustrate how to use TestCafe API - Text typing basics
+ ✓ A set of examples that illustrate how to use TestCafe API - Click an array of labels and then check their states
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using keyboard
+ ✓ A set of examples that illustrate how to use TestCafe API - Moving the slider
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using selection
+ ✓ A set of examples that illustrate how to use TestCafe API - Handle native confirmation dialog
+ ✓ A set of examples that illustrate how to use TestCafe API - Pick option from select
+ ✓ A set of examples that illustrate how to use TestCafe API - Filling a form
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page for 2nd time
+ ✓ 3rd webpage - Open Internet Heroku APP Check boxes
+Test Execution time:   67.028
+{
+  setuptime: 40.583,
+  executionTime: 67.028,
+  buildName: 'Testcafe_Sample_build_SL'
+}
+ ✓ 3rd webpage - Open Internet Heroku APP Check boxes 2nd time
+
+
+ 13 passed (1m 12s)
+Request successful with status code: 200
+Response body:  undefined

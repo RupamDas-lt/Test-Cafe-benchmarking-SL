@@ -1,0 +1,10 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ERROR Cannot prepare tests due to the following error:
+
+TypeError: Cannot read properties of undefined (reading 'interfaceSelect')
+    at Object.<anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:63:34)
+
+Type "testcafe -h" for help.

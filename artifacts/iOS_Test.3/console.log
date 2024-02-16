@@ -1,0 +1,115 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ Running tests in:
+ - Safari 14.0.1 / iOS 14.3
+
+ ✖ A set of examples that illustrate how to use TestCafe API - Small test
+
+   1) ReferenceError: driverSetupEnd is not defined
+
+      Browser: Safari 14.0.1 / iOS 14.3
+
+         73 |
+         74 |// Tests
+         75 |test('Small test', async t => {
+         76 |    await t
+         77 |        .getCookies();
+       > 78 |    driverSetupEnd = new Date();
+         79 |    testExecutionStart = new Date();
+         80 |    let setuptime = (driverSetupEnd.getTime() - driverSetupStart.getTime()) / 1000;
+         81 |    console.log("First command finished in: ",driverSetupEnd.getTime());
+         82 |    console.log("Driver setup time is: ",setuptime);
+         83 |    global.globalJsonObject = { setuptime: setuptime };
+
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:78:19)
+         at asyncGeneratorStep (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at _next (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+
+
+ ✓ A set of examples that illustrate how to use TestCafe API - Text typing basics
+ ✓ A set of examples that illustrate how to use TestCafe API - Click an array of labels and then check their states
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using keyboard
+ ✖ A set of examples that illustrate how to use TestCafe API - Moving the slider
+
+   1) ReferenceError: page is not defined
+
+      Browser: Safari 14.0.1 / iOS 14.3
+
+         110 |        .pressKey('home right . delete delete delete') // Pick even shorter form for name
+         111 |        .expect(nameInput.value).eql('P. Parker'); // Check result
+         112 |});
+         113 |
+         114 |test('Moving the slider', async t => {
+       > 115 |    const initialOffset = await page.slider.handle.offsetLeft;
+         116 |
+         117 |    await t
+         118 |        .click(triedTestCafeCheckbox)
+         119 |        .dragToElement(slider.handle, page.slider.tick.withText('9'));
+         120 |        // .expect(page.slider.handle.offsetLeft).gt(initialOffset);
+
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:115:24)
+         at asyncGeneratorStep (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at _next (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at apply (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:121:2)
+
+
+ ✓ A set of examples that illustrate how to use TestCafe API - Dealing with text using selection
+ ✓ A set of examples that illustrate how to use TestCafe API - Handle native confirmation dialog
+ ✓ A set of examples that illustrate how to use TestCafe API - Pick option from select
+ ✖ A set of examples that illustrate how to use TestCafe API - Filling a form
+
+   1) Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+
+       > | Selector('.result-content')
+
+      Browser: Safari 14.0.1 / iOS 14.3
+
+         172 |
+         173 |    // Let's submit our form
+         174 |    await t
+         175 |        .wait(500)
+         176 |        .click(submitButton)
+       > 177 |        .expect(results.innerText).contains('Bruce Wayne');
+         178 |});
+         179 |
+         180 |
+         181 |fixture `2nd webpage`
+         182 |    .page `https://the-internet.herokuapp.com/login`;
+
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:177:36)
+         at asyncGeneratorStep (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at _next (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+
+
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page
+ ✓ 2nd webpage - Open Internet Heroku APP Login Page for 2nd time
+ ✓ 3rd webpage - Open Internet Heroku APP Check boxes
+ ✖ 3rd webpage - Open Internet Heroku APP Check boxes 2nd time
+
+   1) ReferenceError: endTime is not defined
+
+      Browser: Safari 14.0.1 / iOS 14.3
+
+         233 |        .wait(1800)
+         234 |        .click(checkbox1HA)
+         235 |        .wait(1800)
+         236 |        .click(checkbox2HA)
+         237 |        .wait(1800);
+       > 238 |    endTime = new Date();
+         239 |    const seconds = (endTime.getTime() - testExecutionStart.getTime()) / 1000;
+         240 |    console.log("Test Execution time:  ", seconds);
+         241 |    let startTimeString = "Test Execution time: "+String(seconds);
+         242 |    appendStringToFile(filePath, startTimeString);    
+         243 |
+
+         at <anonymous> (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:238:12)
+         at asyncGeneratorStep (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+         at _next (/Volumes/Sauce/saucectl-runners/sauce-testcafe-runner/3.4.0/bundle/__project__/tests/example.test.js:3:53)
+
+
+
+ 4/13 failed (1m 23s)

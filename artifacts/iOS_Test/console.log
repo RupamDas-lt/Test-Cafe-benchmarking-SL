@@ -1,0 +1,12 @@
+Sauce TestCafe Runner 3.4.0
+Running TestCafe 3.5.0
+Preparing npm environment
+Finished
+ Running tests in:
+ - Safari 14.0.1 / iOS 14.3
+
+ ✓ Change Element Style - Hide an element
+ ✓ Change Element Style - Change header color
+
+
+ 2 passed (8s)
