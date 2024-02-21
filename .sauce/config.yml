@@ -27,7 +27,7 @@ suites:
   - name: iOS Test
     browserName: "safari"
     src:
-      - "tests/*.test.js" # test files glob
+      - "tests/consumer" # test files glob
     simulators:
       # - name: iPhone 12 Simulator
       #   platformName: iOS
