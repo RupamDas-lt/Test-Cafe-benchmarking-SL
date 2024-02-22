@@ -1,6 +1,6 @@
 import { Selector, RequestLogger, RequestMock, ClientFunction } from "testcafe";
 import { test_data } from '../../tests/testData';
-import { config } from "../../config";
+
 
 test_data.test_start_time = new Date().getTime();
 const mockTealiumTracking = RequestMock()
