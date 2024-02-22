@@ -2,7 +2,6 @@ import { Selector, ClientFunction, RequestMock } from "testcafe";
 import { test_data } from '../../tests/testData';
 const axios = require('axios');
 
-import { config } from "../../config";
 
 let second_file_execution_start = 0;
 const setSessionStorageItem = ClientFunction((key: string, value: string) =>
